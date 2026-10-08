@@ -1,0 +1,16 @@
+{
+  "servers": [
+    {
+      "name": "git",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-git"]
+    },
+    {
+      "name": "filesystem",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    }
+  ]
+}
